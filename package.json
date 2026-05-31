@@ -1,0 +1,33 @@
+{
+  "name": "@reviewrouter/subscription-runtime-core",
+  "version": "0.0.0-main.0",
+  "description": "Provider-neutral subscription runtime core.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/777genius/subscription-runtime-core.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
